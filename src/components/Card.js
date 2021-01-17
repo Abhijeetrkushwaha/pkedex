@@ -1,5 +1,6 @@
 import React from 'react';
 import CardImg from '../images/3.png'
+import { Link } from 'react-router-dom';
 
 function Card() {
   return (
@@ -13,10 +14,12 @@ function Card() {
             <p>#1</p>
           </div>
           <div className="card-name">
-            <h3 className="text-center">Bulbarsaur</h3>
+            <h3 className="text-center">Bulbasaur</h3>
           </div>
           <div className="card-search text-center">
-            <button className="btn button">View Detail</button>
+            <Link to='/pokemon'>
+              <button className="btn button">View Detail</button> 
+            </Link>
           </div>
         </div>
       </div>

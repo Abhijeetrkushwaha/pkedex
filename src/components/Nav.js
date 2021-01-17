@@ -1,5 +1,6 @@
 import React from "react";
-import Logo from '../images/pokemon.png'
+import Logo from '../images/pokemon.png';
+import { Link } from 'react-router-dom'
 
 function Nav() {
   return (
@@ -7,10 +8,14 @@ function Nav() {
       <div className="container">
         <div className="nav">
           <div className="nav-brand">
-            <img src={Logo} alt=""/>
+            <Link to='/'>
+              <img src={Logo} alt=""/>
+            </Link>
           </div>
           <div className="nav-search">
-            <button className="btn button">Search Pokemons</button>
+            <Link to='/search'>
+              <button className="btn button">Search Pokemons</button>
+            </Link>
           </div>
         </div>
       </div>

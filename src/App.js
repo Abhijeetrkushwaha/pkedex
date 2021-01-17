@@ -2,13 +2,22 @@ import React from 'react'
 import './App.css'
 import Nav from './components/Nav';
 import PokemonList from './components/PokemonList';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Search from './components/Search';
+import PokemonDetail from './components/PokemonDetail';
 
 function App() {
   return (
-    <div className="main-container">
-      <Nav />
-      <PokemonList />
-    </div>
+    <Router>
+      <div className="main-container">
+        <Nav />
+        <Switch>
+          <Route exact path="/" component={PokemonList} />
+          <Route path="/search" component={Search} />
+          <Route path="/:pokemon" component={PokemonDetail} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

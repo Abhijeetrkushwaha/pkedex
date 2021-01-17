@@ -6,6 +6,9 @@ function PokemonList() {
     <div className="container pokemon-list">
       <div className="row">
         <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
       
     </div>
