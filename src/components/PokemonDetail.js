@@ -6,6 +6,7 @@ function PokemonDetail() {
     <div className="container text-center">
       <div className="pokemon">
         <div className="container">
+
           <div className="row align-items-center">
             <div className="col-12 col-lg-6">
               <div className="pokemon-img">
@@ -48,6 +49,13 @@ function PokemonDetail() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div className="row pt-4">
+            <div className="col text-left pokemon-detail">
+              <h3>About</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corporis magni placeat ipsum harum molestias iste quibusdam laboriosam incidunt similique vero eos odit consequuntur facilis, error reprehenderit voluptate alias ipsa.</p>
             </div>
           </div>
         </div>
