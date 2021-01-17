@@ -14,6 +14,13 @@ function PokemonDetail() {
         <div className="pokemon-img">
           <img src={CardImg} alt=""/>
         </div>
+        <div className="pokemon-type text-center">
+          <h3>Type</h3>
+          <div className="type-grp">
+            <p>Poision</p>
+            <p>Grass</p>
+          </div>
+        </div>
       </div>
     </div>
   )

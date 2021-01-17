@@ -124,3 +124,52 @@ input::placeholder{
   font-size: 18px;
 }
 /* Search.js */
+
+/* PokemonDetail */
+.pokemon{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #0A141E;
+}
+.pokemon-id h3{
+  font-size: 35px;
+  font-weight: 600;
+}
+.pokemon-name h2{
+  font-size: 45px;
+  font-weight: 600;
+}
+.pokemon-img{
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  background: url('./images/electron.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+.pokemon-type{
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #0A141E;
+}
+.pokemon-type h3{
+  font-size: 30px;
+}
+.type-grp{
+  display: flex;
+  justify-content: center;
+}
+.type-grp p{
+  margin: 0 10px;
+  font-size: 25px;
+  color: #0A141E;
+  background-color: #fff;
+  padding: 5px 10px;
+  width: 200px;
+  border-radius: 10px;
+}
+/* PokemonDetail */
