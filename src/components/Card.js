@@ -1,5 +1,5 @@
 import React from 'react';
-import CardImg from '../images/3.png'
+import CardImg from '../images/3.png';
 import { Link } from 'react-router-dom';
 
 function Card() {
