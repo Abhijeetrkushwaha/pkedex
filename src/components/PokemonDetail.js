@@ -17,7 +17,7 @@ function PokemonDetail() {
             <h3>Type</h3>
             <div className="type-grp">
               <p>Poision</p>
-              <p>Grass</p>
+              <p>Grasss</p>
             </div>
           </div>
         </div>
