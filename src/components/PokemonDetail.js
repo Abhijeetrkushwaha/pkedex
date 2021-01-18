@@ -6,6 +6,7 @@ function PokemonDetail(props) {
 
   // console.log(props.match.params.pokemon);
   const [pokemon, setPokemon] = useState(null);
+  const [ability, setAbility] = useState(null);
   const id = props.match.params.pokemon;
 
   useEffect(() => {
@@ -13,11 +14,15 @@ function PokemonDetail(props) {
     .then(res => {
       setPokemon(res.data)
     })
+    axios.get(`https://pokeapi.co/api/v2/pokemon-species/${id}`)
+    .then(res => {
+      setAbility(res.data)
+    })
   }, [id])
 
   // console.log(pokemon);
 
-  let pokemonDetail = pokemon ? (
+  let pokemonDetail = pokemon && ability ? (
     <div className="pokemon">
 
         <div className="pokemon-content">
@@ -31,26 +36,31 @@ function PokemonDetail(props) {
             <div className="pokemon-type text-center">
               <h3>Type</h3>
               <div className="type-grp">
-                <p>Poision</p>
-                <p>Grass</p>
+                {
+                  pokemon.types.map((type, id) => {
+                    return (
+                      <p key={id}>{type.type.name}</p>
+                    )
+                  })
+                }
               </div>
             </div>
             <div className="pokemon-more-detail row justify-content-center">
               <div className="col-4 col-lg-2 more-detail">
                 <p>Height</p>
-                <h4>111</h4>
+                <h4>{parseInt(pokemon.height) / 10} m</h4>
               </div>
               <div className="col-4 col-lg-2 more-detail">
                 <p>Weight</p>
-                <h4>25</h4>
+                <h4>{parseInt(pokemon.weight) / 10} kg</h4>
               </div>
               <div className="col-4 col-lg-2 more-detail">
                 <p>Ability</p>
-                <h4>attack</h4>
+                <h4>{pokemon.abilities[0].ability.name.charAt(0).toUpperCase() + pokemon.abilities[0].ability.name.slice(1)}</h4>
               </div>
               <div className="col-4 col-lg-2 more-detail">
                 <p>Egg Group</p>
-                <h4>Monster</h4>
+                <h4>{ability.egg_groups[0].name.charAt(0).toUpperCase() + ability.egg_groups[0].name.slice(1)}</h4>
               </div>
             </div>
           </div>
@@ -59,7 +69,7 @@ function PokemonDetail(props) {
           <div className="row">
             <div className="col-12">
               <h3>About</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo laudantium quibusdam, dolores optio harum, amet eaque incidunt error voluptatibus cumque dolorum. Enim quisquam ratione impedit quia error, veniam incidunt beatae.</p>
+              <p>{ability.flavor_text_entries[0].flavor_text}</p>
             </div>
           </div>
         </div>
