@@ -55,22 +55,27 @@ header{
 }
 .card-img{
   position: relative;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .card-img::before{
   content: '';
   background: url('./images/pokeball.png') center no-repeat;
   background-size: cover;
   position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
   opacity: .5;
 }
 .card-img img{
   transform: scale(1);
   transition: .6s ease;
   opacity: 1 !important;
+  height: 200px;
 }
 .card:hover .card-img img{
   transform: scale(1.05);
@@ -164,7 +169,7 @@ input::placeholder{
 }
 .type-grp p{
   margin: 0 10px;
-  font-size: 25px;
+  font-size: 20px;
   color: #0A141E;
   background-color: #fff;
   padding: 5px 10px;

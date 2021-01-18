@@ -1,17 +1,17 @@
 import React from 'react';
-import CardImg from '../images/3.png';
+// import CardImg from '../images/3.png';
 import { Link } from 'react-router-dom';
 
-function Card() {
+function Card({ pokemon }) {
   return (
     <div className="col col-md-6 col-lg-4">
       <div className="card">
         <div className="card-img">
-          <img src={CardImg} alt=""/>
+          <img src={pokemon.sprites.other.dream_world.front_default} alt=""/>
         </div>
         <div className="card-content">
           <div className="card-id">
-            <p>#1</p>
+            <p>#{pokemon.id}</p>
           </div>
           <div className="card-name">
             <h3 className="text-center">Bulbasaur</h3>
