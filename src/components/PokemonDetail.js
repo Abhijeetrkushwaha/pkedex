@@ -5,13 +5,39 @@ function PokemonDetail() {
   return (
     <div className="container text-center ptop">
       <div className="pokemon">
-        <div className="container">
 
-          <div className="row align-items-center">
+        <div className="pokemon-content">
+          <div className="pokemon-img">
+            <img src={CardImg} alt=""/>
+          </div>
+          <div className="pokemon-id-name">
+            <h2>#1 Bulbasaur</h2>
+          </div>
+          <div className="pokemon-type text-center">
+            <h3>Type</h3>
+            <div className="type-grp">
+              <p>Poision</p>
+              <p>Grass</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default PokemonDetail;
+
+
+{/*  <div className="row pt-4">
+            <div className="col text-left pokemon-detail">
+              <h3>About</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corporis magni placeat ipsum harum molestias iste quibusdam laboriosam incidunt similique vero eos odit consequuntur facilis, error reprehenderit voluptate alias ipsa.</p>
+            </div>
+          </div>
+  <div className="row align-items-center">
             <div className="col-12 col-lg-6">
-              <div className="pokemon-img">
-                <img src={CardImg} alt=""/>
-              </div>
+              
             </div>
             <div className="col-12 col-lg-6">
               <div className="pokemon-id">
@@ -50,18 +76,6 @@ function PokemonDetail() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
 
-          <div className="row pt-4">
-            <div className="col text-left pokemon-detail">
-              <h3>About</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet corporis magni placeat ipsum harum molestias iste quibusdam laboriosam incidunt similique vero eos odit consequuntur facilis, error reprehenderit voluptate alias ipsa.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default PokemonDetail;
+        */}

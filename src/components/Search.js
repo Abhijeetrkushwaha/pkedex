@@ -10,7 +10,8 @@ function Search() {
   let handleClick = (e) => {
     e.preventDefault()
     if(!input) return false
-    axios.get(`https://pokeapi.co/api/v2/pokemon/${input}`)
+    let newInput = input.toLowerCase()
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${newInput}`)
     .then(res => {
       setPokemon(res.data)
       setInput('')

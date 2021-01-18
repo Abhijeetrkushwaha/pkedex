@@ -139,10 +139,81 @@ input::placeholder{
 /* PokemonDetail */
 .pokemon{
   margin-top: 30px;
-  margin-bottom: 30px;
-  color: #0A141E;
+  padding-bottom: 30px;
+  color: #fff;
 }
-.pokemon-id h3{
+.pokemon-img{
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  background: url('./images/electron.jpg') center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border: 4px solid #8BC2DA;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pokemon-content{
+  position: relative;
+  background-color: #0A141E;
+  padding-top: 250px;
+  z-index: -1;
+  border-radius: 30px 30px 0 0;
+  margin-top: 250px;
+  padding-bottom: 50px;
+}
+.pokemon-type{
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #0A141E;
+}
+.pokemon-type h3{
+  font-size: 30px;
+}
+.type-grp{
+  display: flex;
+  justify-content: center;
+}
+.type-grp p{
+  margin: 0 10px;
+  font-size: 20px;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #0A141E;
+  width: 200px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 600px) {
+  .pokemon-img{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: url('./images/electron.jpg') center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 4px solid #8BC2DA;
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: translateX(0);
+  }
+  .pokemon-content{
+    position: relative;
+    background-color: #0A141E;
+    padding-top: 30px;
+    z-index: -1;
+    border-radius: 30px 30px 0 0;
+    margin-top: 0;
+    padding-bottom: 50px;
+  }
+}
+/* .pokemon-id h3{
   font-size: 35px;
   font-weight: 600;
 }
@@ -199,5 +270,5 @@ input::placeholder{
 .pokemon-detail p{
   font-size: 18px;
   font-weight: 300;
-}
+} */
 /* PokemonDetail */
