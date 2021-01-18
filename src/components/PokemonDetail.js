@@ -7,17 +7,19 @@ function PokemonDetail() {
       <div className="pokemon">
 
         <div className="pokemon-content">
-          <div className="pokemon-img">
-            <img src={CardImg} alt=""/>
-          </div>
-          <div className="pokemon-id-name">
-            <h2>#1 Bulbasaur</h2>
-          </div>
-          <div className="pokemon-type text-center">
-            <h3>Type</h3>
-            <div className="type-grp">
-              <p>Poision</p>
-              <p>Grass</p>
+          <div className="container">
+            <div className="pokemon-img">
+              <img src={CardImg} alt=""/>
+            </div>
+            <div className="pokemon-id-name">
+              <h2>#1 Bulbasaur</h2>
+            </div>
+            <div className="pokemon-type text-center">
+              <h3>Type</h3>
+              <div className="type-grp">
+                <p>Poision</p>
+                <p>Grass</p>
+              </div>
             </div>
           </div>
         </div>
