@@ -11,6 +11,7 @@ function PokemonDetail(props) {
   const id = props.match.params.pokemon;
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
     .then(res => {
       setPokemon(res.data)
