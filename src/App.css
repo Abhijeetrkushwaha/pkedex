@@ -189,16 +189,18 @@ input::placeholder{
 }
 .pokemon-more-detail{
   margin-top: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
   border-top: 2px solid #8BC2DA;
+  border-bottom: 2px solid #8BC2DA;
 }
 .pokemon-more-detail .more-detail h4{
-  text-decoration: underline;
+  color: #8BC2DA;
 }
 .about{
   background-color: #0A141E;
   border-radius: 0 0 30px 30px;
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 @media screen and (max-width: 600px) {
   .pokemon-img{
@@ -221,7 +223,6 @@ input::placeholder{
     padding-top: 30px;
     z-index: -1;
     margin-top: 0;
-    padding-bottom: 50px;
   }
 }
 /* .pokemon-id h3{

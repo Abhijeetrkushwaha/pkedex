@@ -23,20 +23,20 @@ function PokemonDetail() {
             </div>
             <div className="pokemon-more-detail row justify-content-center">
               <div className="col-4 col-lg-2 more-detail">
-                <h4>Height</h4>
-                <p>111</p>
+                <p>Height</p>
+                <h4>111</h4>
               </div>
               <div className="col-4 col-lg-2 more-detail">
-                <h4>Weight</h4>
-                <p>23</p>
+                <p>Weight</p>
+                <h4>25</h4>
               </div>
               <div className="col-4 col-lg-2 more-detail">
-                <h4>Ability</h4>
-                <p>attack</p>
+                <p>Ability</p>
+                <h4>attack</h4>
               </div>
               <div className="col-4 col-lg-2 more-detail">
-                <h4>Egg Group</h4>
-                <p>monster</p>
+                <p>Egg Group</p>
+                <h4>Monster</h4>
               </div>
             </div>
           </div>
