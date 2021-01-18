@@ -105,7 +105,7 @@ header{
 
 /* Search.js */
 .main-search{
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   padding-top: 80px;
 }
 .search{
