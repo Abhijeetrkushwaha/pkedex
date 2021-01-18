@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Card from './Card'
 import axios from 'axios'
+import Loader from './Loader'
 
 class PokemonList extends Component {
 
@@ -61,9 +62,7 @@ class PokemonList extends Component {
         return <Card pokemon={pokemon} key={pokemon.id}/>
       })
     ) : (
-      <div className="col-12 text-center">
-        <h4>Loading...</h4>
-      </div>
+      <Loader />
     )
     return (
       <div className="container pokemon-list ptop">

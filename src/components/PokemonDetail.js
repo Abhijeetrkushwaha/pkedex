@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import CardImg from '../images/3.png';
 import axios from "axios";
+import Loader from "./Loader";
 
 function PokemonDetail(props) {
 
@@ -75,7 +76,7 @@ function PokemonDetail(props) {
         </div>
       </div>
   ) : (
-    <div className="loading">Loading...</div>
+    <Loader />
   )
 
   return (
