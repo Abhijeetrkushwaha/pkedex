@@ -1,18 +1,32 @@
-import React from "react";
-import CardImg from '../images/3.png';
+import React, { useState, useEffect } from "react";
+// import CardImg from '../images/3.png';
+import axios from "axios";
 
-function PokemonDetail() {
-  return (
-    <div className="container text-center ptop">
-      <div className="pokemon">
+function PokemonDetail(props) {
+
+  // console.log(props.match.params.pokemon);
+  const [pokemon, setPokemon] = useState(null);
+  const id = props.match.params.pokemon;
+
+  useEffect(() => {
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
+    .then(res => {
+      setPokemon(res.data)
+    })
+  }, [id])
+
+  // console.log(pokemon);
+
+  let pokemonDetail = pokemon ? (
+    <div className="pokemon">
 
         <div className="pokemon-content">
           <div className="container">
             <div className="pokemon-img">
-              <img src={CardImg} alt=""/>
+              <img src={pokemon.sprites.other.dream_world.front_default} alt=""/>
             </div>
             <div className="pokemon-id-name">
-              <h2>#1 Bulbasaur</h2>
+              <h2>#{pokemon.id} {pokemon.forms[0].name.charAt(0).toUpperCase() + pokemon.forms[0].name.slice(1)}</h2>
             </div>
             <div className="pokemon-type text-center">
               <h3>Type</h3>
@@ -50,6 +64,13 @@ function PokemonDetail() {
           </div>
         </div>
       </div>
+  ) : (
+    <div className="loading">Loading...</div>
+  )
+
+  return (
+    <div className="container text-center ptop">
+      {pokemonDetail}
     </div>
   )
 }
