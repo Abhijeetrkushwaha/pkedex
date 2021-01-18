@@ -51,7 +51,6 @@ header{
   margin: 10px 0;
   border: 2px solid #8BC2DA;
   box-shadow: 0 0 10px 1px #8BC2DA;
-  cursor: pointer;
 }
 .card-img{
   position: relative;

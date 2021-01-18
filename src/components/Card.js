@@ -17,7 +17,7 @@ function Card({ pokemon }) {
             <h3 className="text-center">{pokemon.forms[0].name.charAt(0).toUpperCase() + pokemon.forms[0].name.slice(1)}</h3>
           </div>
           <div className="card-search text-center">
-            <Link to='/pokemon'>
+            <Link to={'/' + pokemon.id}>
               <button className="btn button">View Detail</button> 
             </Link>
           </div>
