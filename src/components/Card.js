@@ -14,7 +14,7 @@ function Card({ pokemon }) {
             <p>#{pokemon.id}</p>
           </div>
           <div className="card-name">
-            <h3 className="text-center">Bulbasaur</h3>
+            <h3 className="text-center">{pokemon.forms[0].name}</h3>
           </div>
           <div className="card-search text-center">
             <Link to='/pokemon'>
