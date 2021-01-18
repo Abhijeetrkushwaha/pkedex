@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 function Card({ pokemon }) {
   return (
-    <div className="col col-md-6 col-lg-4">
+    <div className="col-12 col-md-6 col-sm-12 col-lg-4">
       <div className="card">
         <div className="card-img">
           <img src={pokemon.sprites.other.dream_world.front_default} alt=""/>
