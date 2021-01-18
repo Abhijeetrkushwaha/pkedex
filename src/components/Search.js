@@ -26,7 +26,7 @@ function Search() {
   ) : null
 
   return (
-    <div className="container ptop">
+    <div className="container ptop main-search">
       <div className="search">
         <form>
           <div className="form-group">
