@@ -3,7 +3,7 @@ import CardImg from '../images/3.png';
 
 function PokemonDetail() {
   return (
-    <div className="container text-center">
+    <div className="container text-center ptop">
       <div className="pokemon">
         <div className="container">
 

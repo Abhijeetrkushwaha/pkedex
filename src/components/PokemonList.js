@@ -24,7 +24,7 @@ class PokemonList extends Component {
       this.setState({
         nextUrl: res.data.next
       })
-      console.log(this.state.nextUrl);
+      // console.log(this.state.nextUrl);
     })
   }
 
@@ -46,7 +46,7 @@ class PokemonList extends Component {
         nextUrl: res.data.next,
         startLoading: true
       })
-      console.log(this.state.nextUrl);
+      // console.log(this.state.nextUrl);
     })
   }
 
@@ -65,7 +65,7 @@ class PokemonList extends Component {
       </div>
     )
     return (
-      <div className="container pokemon-list">
+      <div className="container pokemon-list ptop">
         <div className="row justify-content-center">
           {cards}
         </div>
