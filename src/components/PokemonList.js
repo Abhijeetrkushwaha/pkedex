@@ -29,6 +29,7 @@ class PokemonList extends Component {
   }
 
   handleClick = () => {
+    if(!this.state.nextUrl) return
     this.setState({
       startLoading: false,
     })

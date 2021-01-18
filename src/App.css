@@ -130,7 +130,6 @@ input::placeholder{
   outline: none;
   border: none;
   text-align: center;
-  text-transform: uppercase;
   border-bottom: 2px solid #8BC2DA;
   margin-bottom: 10px;
   font-size: 18px;
