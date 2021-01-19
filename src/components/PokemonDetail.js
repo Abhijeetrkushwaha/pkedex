@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 // import CardImg from '../images/3.png';
 import axios from "axios";
 import Loader from "./Loader";
+import { Link } from "react-router-dom";
 
 function PokemonDetail(props) {
 
@@ -84,6 +85,9 @@ function PokemonDetail(props) {
               <p>{ability.flavor_text_entries[0].flavor_text}</p>
             </div>
           </div>
+        </div>
+        <div className="container text-center">
+          <Link to='/' className="btn button mt-3">Back to Pokedex</Link>
         </div>
       </div>
   ) : (

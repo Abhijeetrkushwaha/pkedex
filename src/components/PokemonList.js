@@ -12,6 +12,7 @@ class PokemonList extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0, 0)
     axios.get('https://pokeapi.co/api/v2/pokemon')
     .then(res => {
       res.data.results.forEach(pokemon => {
