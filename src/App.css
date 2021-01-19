@@ -223,10 +223,14 @@ input::placeholder{
   flex-wrap: wrap;
 }
 .pokemon-stats h5{
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 .pokemon-stats h5 span {
   color: #8BC2DA;
+}
+.data-not-avalible{
+  padding-top: 70px;
+  height: calc(100vh - 100px);
 }
 /* Loader.js */
 .loaderBg{

@@ -23,6 +23,7 @@ function PokemonDetail(props) {
   }, [id])
 
   // console.log(pokemon);
+  if(parseInt(id) > 649) return <div className="container data-not-avalible text-center">Data not available</div>
 
   let pokemonDetail = pokemon && ability ? (
     <div className="pokemon">
