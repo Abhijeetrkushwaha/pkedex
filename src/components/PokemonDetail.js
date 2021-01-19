@@ -70,6 +70,15 @@ function PokemonDetail(props) {
         <div className="container about">
           <div className="row">
             <div className="col-12">
+              <div className="pokemon-stats">
+                {
+                  pokemon.stats.map((stat, i) => {
+                    return <h5 key={i}>{stat.stat.name.toUpperCase()}: <span>{stat.base_stat}</span></h5>
+                  })
+                }
+              </div>
+            </div>
+            <div className="col-12 pt-3">
               <h3>About</h3>
               <p>{ability.flavor_text_entries[0].flavor_text}</p>
             </div>
