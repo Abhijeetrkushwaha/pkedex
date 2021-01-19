@@ -184,7 +184,7 @@ input::placeholder{
   background-color: #0A141E;
 }
 .pokemon-type h3{
-  font-size: 30px;
+  font-size: 25px;
 }
 .type-grp{
   display: flex;
@@ -193,7 +193,7 @@ input::placeholder{
 .type-grp p{
   margin: 0 10px;
   font-size: 20px;
-  padding: 5px 10px;
+  padding: 2px 0px;
   background-color: #fff;
   color: #0A141E;
   width: 200px;
@@ -218,15 +218,19 @@ input::placeholder{
   padding-top: 10px;
 }
 .pokemon-stats{
+  margin-top: 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border: 2px solid #8BC2DA;
 }
 .pokemon-stats h5{
   margin: 5px 10px;
+  font-size: 18px;
 }
-.pokemon-stats h5 span {
+.pokemon-stats span {
   color: #8BC2DA;
+  font-size: 20px;
 }
 .data-not-avalible{
   padding-top: 70px;

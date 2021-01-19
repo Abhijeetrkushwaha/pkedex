@@ -50,19 +50,19 @@ function PokemonDetail(props) {
               </div>
             </div>
             <div className="pokemon-more-detail row justify-content-center">
-              <div className="col-4 col-lg-2 more-detail">
+              <div className="col-6 col-lg-2 more-detail">
                 <p>Height</p>
                 <h4>{parseInt(pokemon.height) / 10} m</h4>
               </div>
-              <div className="col-4 col-lg-2 more-detail">
+              <div className="col-6 col-lg-2 more-detail">
                 <p>Weight</p>
                 <h4>{parseInt(pokemon.weight) / 10} kg</h4>
               </div>
-              <div className="col-4 col-lg-2 more-detail">
+              <div className="col-6 col-lg-2 more-detail">
                 <p>Egg Group</p>
                 <h4>{ability.egg_groups[0].name.charAt(0).toUpperCase() + ability.egg_groups[0].name.slice(1)}</h4>
               </div>
-              <div className="col-4 col-lg-2 more-detail">
+              <div className="col-6 col-lg-2 more-detail">
                 <p>Ability</p>
                 <h4>{pokemon.abilities[0].ability.name.charAt(0).toUpperCase() + pokemon.abilities[0].ability.name.slice(1)}</h4>
               </div>
