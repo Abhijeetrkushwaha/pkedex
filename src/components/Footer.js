@@ -6,7 +6,7 @@ function Footer() {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 text-center pb-2">
-            Made with<span role="img" aria-label="love">❤️</span> by <a href="http://abhijeetkwh.vercel.app/" target="_blank" rel="noreferrer">Abhijeet Kushwaha</a> 
+            Made with <span role="img" aria-label="love">❤️</span> by <a href="http://abhijeetkwh.vercel.app/" target="_blank" rel="noreferrer">Abhijeet Kushwaha</a> 
           </div>
           <div className="col-12 text-center justify-content-center align-item-centers">
             <div class="social-links">
