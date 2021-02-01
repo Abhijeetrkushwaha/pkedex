@@ -59,7 +59,7 @@ class PokemonList extends Component {
       return parseInt(a.id) - parseInt(b.id)
     })
     let cards = pokemons.length ? (
-      pokemons.sort(pokemons.id).map(pokemon => {
+      pokemons.map(pokemon => {
         return <Card pokemon={pokemon} key={pokemon.id}/>
       })
     ) : (
